@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>License — FandorinGames Content Publisher</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Share+Tech+Mono&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --teal: #00e5c8;
+    --bg: #080c10;
+    --surface: #0d1219;
+    --border: rgba(0,229,200,0.15);
+    --text: #c8d6e0;
+    --text-dim: #5a7080;
+    --red: #ff4d6d;
+    --green: #00e5c8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0,229,200,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,229,200,0.03) 1px, transparent 1px);
+    background-size: 48px 48px;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 72px 32px;
+    position: relative;
+    z-index: 1;
+  }
+  .back {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--teal);
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 48px;
+    transition: opacity 0.2s;
+  }
+  .back:hover { opacity: 0.7; }
+  .badge {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--teal);
+    letter-spacing: 0.2em;
+    display: block;
+    margin-bottom: 12px;
+  }
+  h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    border-left: 3px solid var(--teal);
+    padding-left: 20px;
+    margin-bottom: 8px;
+  }
+  .meta {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--text-dim);
+    margin-bottom: 48px;
+    padding-left: 23px;
+    letter-spacing: 0.08em;
+  }
+  .summary {
+    border: 1px solid var(--teal);
+    background: rgba(0,229,200,0.04);
+    padding: 28px 32px;
+    margin-bottom: 24px;
+  }
+  .summary h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--teal);
+    margin-bottom: 20px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .rule {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+  .icon {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 13px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .icon.yes { color: var(--green); }
+  .icon.no  { color: var(--red); }
+  .rule p {
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .section {
+    border: 1px solid var(--border);
+    background: var(--surface);
+    padding: 32px;
+    margin-bottom: 2px;
+  }
+  .section::before {
+    content: attr(data-num);
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--teal);
+    letter-spacing: 0.15em;
+    display: block;
+    margin-bottom: 12px;
+  }
+  h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 14px;
+    letter-spacing: 0.04em;
+  }
+  p { font-size: 14px; line-height: 1.8; color: var(--text-dim); }
+  .code-block {
+    background: #050810;
+    border: 1px solid var(--border);
+    padding: 20px 24px;
+    margin-top: 16px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    color: var(--text-dim);
+    line-height: 1.8;
+    white-space: pre-wrap;
+  }
+  .footer {
+    border-top: 1px solid var(--border);
+    padding-top: 32px;
+    margin-top: 48px;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .footer a {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--text-dim);
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .footer a:hover { color: var(--teal); }
+</style>
+</head>
+<body>
+<div class="container">
+  <a class="back" href="index.html">← Back</a>
+  <span class="badge">// legal</span>
+  <h1>License</h1>
+  <p class="meta">Business Source License 1.1 (BUSL-1.1) &nbsp;|&nbsp; FandorinGames Content Publisher</p>
+
+  <div class="summary">
+    <h2>// Plain English Summary</h2>
+    <div class="rule">
+      <span class="icon yes">✓</span>
+      <p>You may view and study this code for personal, educational, or non-commercial purposes.</p>
+    </div>
+    <div class="rule">
+      <span class="icon yes">✓</span>
+      <p>You may fork and modify it for your own non-commercial projects.</p>
+    </div>
+    <div class="rule">
+      <span class="icon no">✗</span>
+      <p>You may NOT use this code — or any substantial part of it — in a commercial product or service without a written license from FandorinGames.</p>
+    </div>
+    <div class="rule">
+      <span class="icon no">✗</span>
+      <p>You may NOT offer this tool as a service, SaaS, or API to paying customers.</p>
+    </div>
+    <div class="rule">
+      <span class="icon yes">✓</span>
+      <p>Commercial licensing is available — contact fandorinpl@gmail.com to discuss terms.</p>
+    </div>
+  </div>
+
+  <div class="section" data-num="BUSL-1.1 //">
+    <h2>Full License Text</h2>
+    <div class="code-block">Business Source License 1.1
+
+Licensor:             FandorinGames
+Licensed Work:        FandorinGames Content Publisher
+Change Date:          Four years from the date of each release
+Change License:       GNU General Public License v2.0 or later
+
+Use Limitation:       The Licensed Work may not be used for
+                      Commercial Use.
+
+"Commercial Use" means use for direct or indirect commercial
+advantage or monetary compensation, including but not limited to:
+offering the Licensed Work as a service to third parties,
+integrating it into a commercial product, or using it in
+a for-profit business process.
+
+For information about obtaining a commercial license, contact:
+fandorinpl@gmail.com
+
+The Business Source License does not grant you any rights to
+use the Licensor's trademarks, including the FandorinGames brand.
+
+DISCLAIMER: THE LICENSED WORK IS PROVIDED "AS IS". THE LICENSOR
+HEREBY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+AND NON-INFRINGEMENT.
+    </div>
+  </div>
+
+  <div class="section" data-num="Note //">
+    <h2>After 4 Years</h2>
+    <p>Per BUSL-1.1 terms, each release of the Licensed Work automatically converts to the GNU GPL v2.0 license four years after its release date, at which point it becomes fully open source.</p>
+  </div>
+
+  <footer class="footer">
+    <a href="index.html">Home</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</div>
+</body>
+</html>
